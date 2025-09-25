@@ -1,0 +1,47 @@
+{
+  "name": "ai-powered-travel-recommendation-app",
+  "version": "1.0.0",
+  "description": "Travel recommendation app powered by AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwinvx/AI-powered-travel-recommendation-app.git"
+  },
+  "keywords": [
+    "AI",
+    "travel",
+    "recommendation",
+    "travel",
+    "planner",
+    "AI",
+    "travel"
+  ],
+  "author": "Ashwin Rachakonda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwinvx/AI-powered-travel-recommendation-app/issues"
+  },
+  "homepage": "https://github.com/ashwinvx/AI-powered-travel-recommendation-app#readme",
+  "dependencies": {
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"cross-env": "^10.0.0",
+		"dotenv-flow": "^4.1.0",
+		"ejs": "^3.1.10",
+		"express": "^5.1.0",
+		"express-rate-limit": "^8.0.1",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.18.2",
+		"validator": "^13.15.15"
+	},
+	"devDependencies": {
+		"chai": "^6.0.1",
+		"chai-http": "^5.1.2",
+		"mocha": "^11.7.2",
+		"nodemon": "^3.1.10"
+	}
+}
