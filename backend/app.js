@@ -1,8 +1,9 @@
 require('dotenv-flow').config();
 
 const express = require('express');
-const mongoose = require('mongoose');
+const connectDB = require('./db');
 const authRoutes = require('./routes/authRoutes');
+const tripRoutes = require('./routes/tripRoutes');
 const cookieParser = require('cookie-parser');
 const { requireAuth, checkUser } = require('./middlewares/authMiddleware');
 const corsMiddleware = require('./cors');
@@ -12,17 +13,7 @@ const ExpressError = require('./middlewares/expressError');
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Connect to MongoDB
-const connectDB = async () => {
-    try {
-        const conn = await mongoose.connect(process.env.MONGO_URI);
-        console.log(`MongoDB Connected: ${conn.connection.host}`);
-    } catch (error) {
-        console.error(`Error: ${error.message}`);
-        process.exit(1);
-    }
-};
-
+// Connect to database
 connectDB();
 
 // view engine
@@ -40,6 +31,7 @@ app.use(corsMiddleware);
 app.get('/{*any}', checkUser);
 app.get('/', (req, res) => res.status(200).send('API is running...'));
 app.use("/api/users", checkUser, authRoutes);
+app.use("/api/trips", tripRoutes);
 
 // Start the server
 app.listen(port, () => {

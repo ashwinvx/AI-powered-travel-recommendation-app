@@ -75,7 +75,7 @@ nav li a {
 
 .btn {
     border-radius: 36px;
-    background: #FEE996;
+    background: lightblue;
 }
 
 form h2 {
@@ -109,7 +109,7 @@ label {
 button {
     margin-top: 30px;
     border-radius: 36px;
-    background: #FEE996;
+    background: lightblue;
     border: 0;
     text-transform: uppercase;
     font-weight: 700;
