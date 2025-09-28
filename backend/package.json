@@ -27,6 +27,7 @@
   "homepage": "https://github.com/ashwinvx/AI-powered-travel-recommendation-app#readme",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "axios": "^1.12.2",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
