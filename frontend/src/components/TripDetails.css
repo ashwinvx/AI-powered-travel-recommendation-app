@@ -1,0 +1,146 @@
+.trip-details-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #c9d1d9;
+}
+
+.trip-details-container h2 {
+    color: #f0f6fc;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.details-header {
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.details-header p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.details-header p strong {
+    color: #8b949e;
+}
+
+.itinerary-section,
+.recommendations-section {
+    margin-bottom: 2.5rem;
+}
+
+.itinerary-section h3,
+.recommendations-section h3 {
+    color: #58a6ff;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.day-plan {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.day-plan h4 {
+    margin-top: 0;
+    color: #f0f6fc;
+}
+
+.day-plan ul {
+    list-style-type: '➡️ ';
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.day-plan li {
+    line-height: 1.6;
+    color: #c9d1d9;
+}
+
+.recommendations-section p {
+    line-height: 1.6;
+}
+
+.details-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    /* Add a gap between buttons */
+    margin-bottom: 1rem;
+}
+
+.edit-trip-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #58a6ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.edit-trip-btn:hover {
+    background-color: #79c0ff;
+}
+
+.manual-edit-btn {
+    background-color: #30363d;
+}
+
+.manual-edit-btn:hover {
+    background-color: #444c56;
+}
+
+.map-section {
+    margin-top: 2.5rem;
+}
+
+.map-section h3 {
+    color: #58a6ff;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    height: 550px;
+    width: 100%;
+    background-color: #161b22;
+    /* Fallback background color */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.details-map-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns of equal width */
+    gap: 2rem;
+    /* Add a gap between the two columns */
+    align-items: start;
+    /* Align content to the top */
+    margin-top: 2rem;
+}
+
+.details-content {
+    /* Style for the left-side content container */
+    overflow-y: auto;
+    /* Enable scrolling for the details content */
+    max-height: 550px;
+    /* Set a max height so content and map are aligned */
+}

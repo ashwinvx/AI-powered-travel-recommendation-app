@@ -1,0 +1,31 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    color: #c9d1d9;
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #f0f6fc;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.dashboard-message {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+.dashboard-message.error {
+    color: #ff7b72;
+}

@@ -1,0 +1,147 @@
+/* General App Styling */
+body {
+    background-color: #0d1117;
+    /* Dark charcoal background */
+    color: #c9d1d9;
+    /* Light gray text for high contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #30363d;
+    /* Subtle separator */
+}
+
+.App-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f0f6fc;
+    /* Bright white for emphasis */
+}
+
+/* Form Container Styling (Glassmorphism Effect) */
+.form-container {
+    max-width: 600px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    /* Semi-transparent background */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    /* Frosted shadow effect */
+    backdrop-filter: blur(8px);
+    /* The "frosted glass" effect */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle white border */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #f0f6fc;
+    font-weight: 500;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #c9d1d9;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #161b22;
+    /* Darker input field background */
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: #f0f6fc;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #8b949e;
+    font-style: italic;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #58a6ff;
+    /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #238636;
+    /* GitHub-style green for call-to-action */
+    color: #f0f6fc;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #2ea043;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #21262d;
+    color: #6a737d;
+    cursor: not-allowed;
+}
+
+/* Messages Styling */
+.message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: #6d1e1f;
+    color: #ff7b72;
+    border: 1px solid #f85149;
+}
+
+.success-message {
+    background-color: #172d25;
+    color: #56d364;
+    border: 1px solid #238636;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .App-header h1 {
+        font-size: 2rem;
+    }
+}
